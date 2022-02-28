@@ -17,6 +17,8 @@ Step 3: Run the command
 python3 main.py --input_data 'dataset/dataset_trial_1' --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation 
 --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
 
+Description of command line:
+
 --input_data = path of dataset
 --data_list = Independent variable for models
 --target_list = Dependent variable for models
