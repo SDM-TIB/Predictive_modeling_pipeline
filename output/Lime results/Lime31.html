@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divDM38FNWO59COI2D"></div>
+        <div class="lime top_div" id="top_divKC435E7F7ERCRJY"></div>
         
         <script>
-        var top_div = d3.select('#top_divDM38FNWO59COI2D').classed('lime top_div', true);
+        var top_div = d3.select('#top_divKC435E7F7ERCRJY').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.5, 0.5]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [1.0, 0.0]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["cancer_type_Colorrectal <= 0.00", 0.28338086298126985], ["age_YOUNGER <= 0.00", 0.25510348711389924], ["cancer_type_Esophagogastric > 0.00", -0.20113638327381975], ["0.00 < family_degree_Male_First_Degree <= 1.00", 0.15925661888425818], ["cancer_type_Head_and_neck <= 0.00", -0.1482325418147615], ["smoker_PreviousSmoker > 0.00", -0.14576529806737826], ["0.00 < gender_Male <= 1.00", 0.10209581093295048], ["cancer_type_Lung <= 0.00", 0.05242085959811063], ["family_degree_Male_Second_Degree <= 0.00", -0.031234831158631755], ["family_degree_Female_Second_Degree <= 0.00", -0.022447892821043928]], 1, exp_div);
+                exp.show([["cancer_type_Colorrectal <= 0.00", 0.28030201227511914], ["age_YOUNGER <= 0.00", 0.2389301423701744], ["smoker_PreviousSmoker > 0.00", -0.2122862169901028], ["cancer_type_Esophagogastric > 0.00", -0.20402834156477925], ["cancer_type_Head_and_neck <= 0.00", -0.16758881048495505], ["0.00 < family_degree_Male_First_Degree <= 1.00", 0.16415288135223727], ["0.00 < gender_Male <= 1.00", 0.08401154051265768], ["cancer_type_Lung <= 0.00", 0.06465469996259801], ["family_degree_Female_Second_Degree <= 0.00", -0.037944998867092926], ["family_degree_Female_Third_Degree <= 0.00", -0.033613046680909434]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["cancer_type_Colorrectal", "0.00", 0.28338086298126985], ["age_YOUNGER", "0.00", 0.25510348711389924], ["cancer_type_Esophagogastric", "1.00", -0.20113638327381975], ["family_degree_Male_First_Degree", "1.00", 0.15925661888425818], ["cancer_type_Head_and_neck", "0.00", -0.1482325418147615], ["smoker_PreviousSmoker", "1.00", -0.14576529806737826], ["gender_Male", "1.00", 0.10209581093295048], ["cancer_type_Lung", "0.00", 0.05242085959811063], ["family_degree_Male_Second_Degree", "0.00", -0.031234831158631755], ["family_degree_Female_Second_Degree", "0.00", -0.022447892821043928]], 1, raw_div);
+            exp.show_raw_tabular([["cancer_type_Colorrectal", "0.00", 0.28030201227511914], ["age_YOUNGER", "0.00", 0.2389301423701744], ["smoker_PreviousSmoker", "1.00", -0.2122862169901028], ["cancer_type_Esophagogastric", "1.00", -0.20402834156477925], ["cancer_type_Head_and_neck", "0.00", -0.16758881048495505], ["family_degree_Male_First_Degree", "1.00", 0.16415288135223727], ["gender_Male", "1.00", 0.08401154051265768], ["cancer_type_Lung", "0.00", 0.06465469996259801], ["family_degree_Female_Second_Degree", "0.00", -0.037944998867092926], ["family_degree_Female_Third_Degree", "0.00", -0.033613046680909434]], 1, raw_div);
         
         </script>
         </body></html>

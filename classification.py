@@ -10,27 +10,30 @@ import lime
 import lime.lime_tabular
 from sklearn import tree
 import seaborn as sns
-import dtreeviz
+import dtreeviz_lib
+from dtreeviz.trees import *
+import os
+
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
 
-
-def plot_feature_importance(importance,names,model_type):
-    #Create arrays from feature importance and feature names
+def plot_feature_importance(importance, names, model_type):
+    # Create arrays from feature importance and feature names
     feature_importance = np.array(importance)
     feature_names = np.array(names)
 
-    #Create a DataFrame using a Dictionary
-    data={'feature_names':feature_names,'feature_importance':feature_importance}
+    # Create a DataFrame using a Dictionary
+    data = {'feature_names': feature_names, 'feature_importance': feature_importance}
     fi_df = pd.DataFrame(data)
 
-    #Sort the DataFrame in order decreasing feature importance
-    fi_df.sort_values(by=['feature_importance'], ascending=False,inplace=True)
+    # Sort the DataFrame in order decreasing feature importance
+    fi_df.sort_values(by=['feature_importance'], ascending=False, inplace=True)
 
-    #Define size of bar plot
-    plt.figure(figsize=(15,15))
-    #Plot Searborn bar chart
+    # Define size of bar plot
+    plt.figure(figsize=(15, 15))
+    # Plot Searborn bar chart
     sns.barplot(x=fi_df['feature_importance'], y=fi_df['feature_names'])
-    #Add chart labels
+    # Add chart labels
     plt.title(model_type + '_FEATURE IMPORTANCE')
     plt.xlabel('FEATURE IMPORTANCE')
     plt.ylabel('FEATURE NAMES')
@@ -38,11 +41,7 @@ def plot_feature_importance(importance,names,model_type):
     plt.savefig('output/plots/Random_Forest_Feature_importance.png')
 
 
-
-
-
-
-def binary_classification(sampled_data,sampled_target,imp_features,cross_validation,classes):
+def binary_classification(sampled_data, sampled_target, imp_features, cross_validation, classes):
     sampled_data = sampled_data.drop(columns="first_col")
     sampled_target['class'] = sampled_target['class'].astype(int)
     # print(sampled_data)
@@ -72,7 +71,8 @@ def binary_classification(sampled_data,sampled_target,imp_features,cross_validat
 
     # Taking important features
     new_sampled_data = sampled_data[list(important_features)]
-    X_train, X_test, y_train, y_test = train_test_split(new_sampled_data.values, sampled_target['class'].values, random_state=123)
+    X_train, X_test, y_train, y_test = train_test_split(new_sampled_data.values, sampled_target['class'].values,
+                                                        random_state=123)
 
     feature_names = new_sampled_data.columns
     parameters = {"max_depth": range(4, 6)}
@@ -99,13 +99,14 @@ def binary_classification(sampled_data,sampled_target,imp_features,cross_validat
     # exp = explainer.explain_instance(X_test[5], best_clf.predict_proba, num_features=10)
 
     [explainer.explain_instance(i, best_clf.predict_proba, num_features=10).save_to_file('output/Lime results/Lime' + str(j) + '.html') for j, i in enumerate(X_test)]
-    print("***************************** Lime Interpretability results saved in output folder ****************************")
+    print(
+        "***************************** Lime Interpretability results saved in output folder ****************************")
 
     target_names = classes.split(",")
     print("****************** Classification report saved in output folder *************************")
-    report = classification_report(y_test, y_pred, target_names=target_names,output_dict=True)
+    report = classification_report(y_test, y_pred, target_names=target_names, output_dict=True)
     classificationreport = pd.DataFrame(report).transpose()
-    #print(classificationreport)
+    # print(classificationreport)
     classificationreport.to_csv("output/Final Classiciation report.csv", index=True)
 
     bool_feature = []
@@ -115,11 +116,11 @@ def binary_classification(sampled_data,sampled_target,imp_features,cross_validat
             values = sorted(values)
             if values[0] == 0 and values[1] == 1:
                 bool_feature.append(feature)
-    #print(bool_feature)
+    # print(bool_feature)
 
-    # viz = dtreeviz(best_clf, new_sampled_data, sampled_target['class'], target_name='class', feature_names=feature_names, class_names=target_names, fancy=False, show_root_edge_labels=True)  # histtype= 'barstacked'
-    #
-    # viz.save('RF_undersampling_final_results_lime_labels.svg')
+    viz = dtreeviz_lib.dtreeviz(best_clf, new_sampled_data, sampled_target['class'], target_name='class',
+                                feature_names=feature_names, class_names=target_names, fancy=False,
+                                show_root_edge_labels=True, bool_feature=bool_feature)
+    viz.save('RF_undersampling_final_results_lime_labels.svg')
 
     return classificationreport
-

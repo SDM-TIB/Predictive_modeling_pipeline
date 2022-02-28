@@ -9,12 +9,13 @@ Step1: Modules to be installed
 4) pip install svglib
 5) pip install colour
 6) pip install graphviz
+7) pip install dtreeviz
 
 Step 2: Data preparation
 
 
 Step 3: Run the command - 
-python3 main.py --input_data 'dataset/dataset_trial_1' --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation 
+python3 main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation 
 --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
 
 Description of command line:
