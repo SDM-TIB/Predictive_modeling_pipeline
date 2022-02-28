@@ -11,7 +11,7 @@ import lime.lime_tabular
 from sklearn import tree
 import seaborn as sns
 import dtreeviz_lib
-from dtreeviz.trees import *
+#from dtreeviz.trees import *
 import os
 
 os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
