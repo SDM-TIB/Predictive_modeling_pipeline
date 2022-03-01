@@ -1,0 +1,7 @@
+pip install imblearn
+pip install lime
+pip install pydotplus
+pip install svglib
+pip install colour
+pip install graphviz
+pip install dtreeviz
