@@ -642,7 +642,7 @@ def dtreeviz(tree_model,
                 (orientation == 'LR' and len(X) > max_X_features_LR):
             # squash all features down to just those used
             display_X = [X[i] for i in features_used] + ['...']
-            print(display_X)
+            #print(display_X)
             display_feature_names = [node.feature_name() for node in path[:-1]] + ['...']
             for i in range(len(display_feature_names)):
                 if display_feature_names[i] in bool_var:
@@ -769,7 +769,7 @@ def dtreeviz(tree_model,
         draw_legend(shadow_tree, shadow_tree.target_name, f"{tmp}/legend_{os.getpid()}.svg", colors=colors)
 
     X_data = shadow_tree.x_data
-    print(len(X_data))
+    #print(len(X_data))
     y_data = shadow_tree.y_data
     if isinstance(X_data, pd.DataFrame):
         X_data = X_data.values

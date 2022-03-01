@@ -16,7 +16,7 @@ digraph G {
 	node17 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=30<br/>cancer_type_Lung</font>>]
 	node16 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=32<br/>cancer_type_Esophagogastric</font>>]
 	node22 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=41<br/>cancer_type_Lung</font>>]
-	node25 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=6<br/>cancer_type_Prostate</font>>]
+	node25 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=6<br/>cancer_type_Colorrectal</font>>]
 	node21 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=47<br/>smoker_PreviousSmoker</font>>]
 	node15 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=79<br/>gender_Male</font>>]
 	node1 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=160<br/>family_degree_Male_First_Degree</font>>]
@@ -181,121 +181,121 @@ digraph G {
     leaf5 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf5_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf5_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf6 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf6_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf6_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf8 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf8_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf8_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf9 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf9_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf9_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf11 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf11_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf11_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf13 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf13_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf13_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf14 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf14_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf14_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf18 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf18_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf18_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf19 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf19_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf19_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf20 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf20_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf20_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf23 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf23_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf23_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf24 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf24_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf24_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf26 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf26_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf26_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf27 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf27_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf27_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf32 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf32_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf32_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf33 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf33_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf33_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf35 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf35_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf35_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf36 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf36_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf36_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf37 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf37_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf37_22188.svg"/></td>
         </tr>
         </table>>]
 	leaf38 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="C:\Users\rivasa\AppData\Local\Temp/leaf38_10436.svg"/></td>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf38_22188.svg"/></td>
         </tr>
         </table>>]
     
@@ -305,7 +305,7 @@ digraph G {
                 
         <table border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td border="0" cellspacing="0" cellpadding="0"><img src="C:\Users\rivasa\AppData\Local\Temp/legend_10436.svg"/></td>
+                <td border="0" cellspacing="0" cellpadding="0"><img src="C:\Users\purohitd\AppData\Local\Temp/legend_22188.svg"/></td>
             </tr>
         </table>
         

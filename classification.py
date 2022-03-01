@@ -121,6 +121,7 @@ def binary_classification(sampled_data, sampled_target, imp_features, cross_vali
     viz = dtreeviz_lib.dtreeviz(best_clf, new_sampled_data, sampled_target['class'], target_name='class',
                                 feature_names=feature_names, class_names=target_names, fancy=False,
                                 show_root_edge_labels=True, bool_feature=bool_feature)
-    viz.save('RF_undersampling_final_results_lime_labels.svg')
+    viz.save('output/plots/RF_undersampling_final_results.svg')
+    print("****** Decision tree plot saved in output/plot folder *********")
 
     return classificationreport
