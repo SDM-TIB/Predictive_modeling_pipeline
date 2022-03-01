@@ -1,24 +1,17 @@
 # Predictive_modeling_pipeline
 
 
-Step1: Modules to be installed
-
-1) pip install imblearn
-2) pip install lime
-3) pip install pydotplus
-4) pip install svglib
-5) pip install colour
-6) pip install graphviz
-7) pip install dtreeviz
+Step1: Run for necessary modules installation <br /><br />
+pip install requirements.txt
 
 Step 2: Data preparation <br /><br />
 Preparing dataset with all the features and index column (example - id of patient). Also specify the the index in both independent (explanatory variable) and dependent variable (response variable)
 
-<br /><br />
+<br />
 
 Step 3: Run the command in the command prompt window - <br /> <br />
 python main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
-<br /><br />
+<br />
 
 Description of command line:<br />
 
