@@ -1,0 +1,317 @@
+
+digraph G {
+    splines=line;
+    nodesep=0.1;
+    ranksep=.2;
+    rankdir=TD;
+    margin=0.0;
+    node [margin="0.03" penwidth="0.5" width=.1, height=.1];
+    edge [arrowsize=.4 penwidth="0.3"]
+    node4 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=56<br/>smoker_PreviousSmoker</font>>]
+	node7 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=7<br/>family_degree_Female_Second_Degree</font>>]
+	node3 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=63<br/>cancer_type_Esophagogastric</font>>]
+	node12 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=5<br/>gender_Male</font>>]
+	node10 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=18<br/>smoker_PreviousSmoker</font>>]
+	node2 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=81<br/>cancer_type_Colorrectal</font>>]
+	node17 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=30<br/>cancer_type_Lung</font>>]
+	node16 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=32<br/>cancer_type_Esophagogastric</font>>]
+	node22 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=41<br/>cancer_type_Lung</font>>]
+	node25 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=6<br/>cancer_type_Prostate</font>>]
+	node21 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=47<br/>smoker_PreviousSmoker</font>>]
+	node15 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=79<br/>gender_Male</font>>]
+	node1 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=160<br/>family_degree_Male_First_Degree</font>>]
+	node31 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=33<br/>cancer_type_Esophagogastric</font>>]
+	node34 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=6<br/>smoker_NonSmoker</font>>]
+	node30 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=39<br/>family_degree_Male_Second_Degree</font>>]
+	node29 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=41<br/>cancer_type_Head_and_neck</font>>]
+	node28 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=50<br/>cancer_type_Colorrectal</font>>]
+	node0 [margin="0" shape=none label=<<font face="Helvetica" color="#444443" point-size="12">S=210<br/>age_YOUNGER</font>>]
+    node4 -> leaf5 [penwidth=0.3 color="#444443" label=<No>]
+	node4 -> leaf6 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf5 -> leaf6 [style=invis]
+            }
+            
+	node7 -> leaf8 [penwidth=0.3 color="#444443" label=<No>]
+	node7 -> leaf9 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf8 -> leaf9 [style=invis]
+            }
+            
+	node3 -> node4 [penwidth=0.3 color="#444443" label=<No>]
+	node3 -> node7 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node4 -> node7 [style=invis]
+            }
+            
+	node12 -> leaf13 [penwidth=0.3 color="#444443" label=<No>]
+	node12 -> leaf14 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf13 -> leaf14 [style=invis]
+            }
+            
+	node10 -> leaf11 [penwidth=0.3 color="#444443" label=<No>]
+	node10 -> node12 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf11 -> node12 [style=invis]
+            }
+            
+	node2 -> node3 [penwidth=0.3 color="#444443" label=<No>]
+	node2 -> node10 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node3 -> node10 [style=invis]
+            }
+            
+	node17 -> leaf18 [penwidth=0.3 color="#444443" label=<No>]
+	node17 -> leaf19 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf18 -> leaf19 [style=invis]
+            }
+            
+	node16 -> node17 [penwidth=0.3 color="#444443" label=<No>]
+	node16 -> leaf20 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node17 -> leaf20 [style=invis]
+            }
+            
+	node22 -> leaf23 [penwidth=0.3 color="#444443" label=<No>]
+	node22 -> leaf24 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf23 -> leaf24 [style=invis]
+            }
+            
+	node25 -> leaf26 [penwidth=0.3 color="#444443" label=<No>]
+	node25 -> leaf27 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf26 -> leaf27 [style=invis]
+            }
+            
+	node21 -> node22 [penwidth=0.3 color="#444443" label=<No>]
+	node21 -> node25 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node22 -> node25 [style=invis]
+            }
+            
+	node15 -> node16 [penwidth=0.3 color="#444443" label=<No>]
+	node15 -> node21 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node16 -> node21 [style=invis]
+            }
+            
+	node1 -> node2 [penwidth=0.3 color="#444443" label=<No>]
+	node1 -> node15 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node2 -> node15 [style=invis]
+            }
+            
+	node31 -> leaf32 [penwidth=0.3 color="#444443" label=<No>]
+	node31 -> leaf33 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf32 -> leaf33 [style=invis]
+            }
+            
+	node34 -> leaf35 [penwidth=0.3 color="#444443" label=<No>]
+	node34 -> leaf36 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                leaf35 -> leaf36 [style=invis]
+            }
+            
+	node30 -> node31 [penwidth=0.3 color="#444443" label=<No>]
+	node30 -> node34 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node31 -> node34 [style=invis]
+            }
+            
+	node29 -> node30 [penwidth=0.3 color="#444443" label=<No>]
+	node29 -> leaf37 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node30 -> leaf37 [style=invis]
+            }
+            
+	node28 -> node29 [penwidth=0.3 color="#444443" label=<No>]
+	node28 -> leaf38 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node29 -> leaf38 [style=invis]
+            }
+            
+	node0 -> node1 [penwidth=0.3 color="#444443" label=<No>]
+	node0 -> node28 [penwidth=0.3 color="#444443" label=<Yes>]
+	
+            {
+                rank=same;
+                node1 -> node28 [style=invis]
+            }
+            
+    leaf5 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf5_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf6 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf6_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf8 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf8_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf9 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf9_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf11 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf11_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf13 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf13_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf14 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf14_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf18 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf18_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf19 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf19_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf20 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf20_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf23 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf23_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf24 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf24_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf26 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf26_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf27 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf27_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf32 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf32_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf33 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf33_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf35 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf35_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf36 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf36_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf37 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf37_23392.svg"/></td>
+        </tr>
+        </table>>]
+	leaf38 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="C:\Users\purohitd\AppData\Local\Temp/leaf38_23392.svg"/></td>
+        </tr>
+        </table>>]
+    
+            subgraph cluster_legend {
+                style=invis;
+                legend [penwidth="0" margin="0" shape=box margin="0.03" width=.1, height=.1 label=<
+                
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td border="0" cellspacing="0" cellpadding="0"><img src="C:\Users\purohitd\AppData\Local\Temp/legend_23392.svg"/></td>
+            </tr>
+        </table>
+        
+                >]
+            }
+            
+    
+}
+    
