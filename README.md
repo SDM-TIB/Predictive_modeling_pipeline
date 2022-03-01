@@ -14,9 +14,8 @@ Step1: Modules to be installed
 Step 2: Data preparation
 
 
-Step 3: Run the command - \n
-python3 main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation 
---classes ALK,others --sampling yes --important_features 15 --cv_folds 5
+Step 3: Run the command - <br />
+python3 main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
 
 Description of command line:
 
