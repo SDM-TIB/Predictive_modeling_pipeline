@@ -15,10 +15,11 @@ Step 2: Data preparation <br /><br />
 Preparing dataset with 
 
 
-Step 3: Run the command - <br /> <br />
+Step 3: Run the command in the command prompt window - <br /> <br />
 python main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
 <br /><br />
-Description of command line:<br /><br />
+
+Description of command line:<br />
 
 --input_data = path of dataset <br />
 --data_list = Independent variable for models <br />
