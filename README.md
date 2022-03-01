@@ -14,15 +14,15 @@ Step1: Modules to be installed
 Step 2: Data preparation
 
 
-Step 3: Run the command - <br />
+Step 3: Run the command - <br /> <br />
 python3 main.py --input_data dataset/dataset_trial_1 --data_list patient_id,gender,age,smoker,family_degree,cancer_type --target_list patient_id,mutation --classes ALK,others --sampling yes --important_features 15 --cv_folds 5
+<br /><br />
+Description of command line:<br /><br />
 
-Description of command line:
-
---input_data = path of dataset
---data_list = Independent variable for models
---target_list = Dependent variable for models
---classes = Name of class
---sampling = If data is imbalanced then yes/no
---important features = give features size that needs to be considered most important
---cv_folds = provide folds for stratifiedshuffle split
+--input_data = path of dataset <br />
+--data_list = Independent variable for models <br />
+--target_list = Dependent variable for models <br />
+--classes = Name of class <br />
+--sampling = If data is imbalanced then yes/no <br />
+--important features = give features size that needs to be considered most important <br />
+--cv_folds = provide folds for stratifiedshuffle split <br />
