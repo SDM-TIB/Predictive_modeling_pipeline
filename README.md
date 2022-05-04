@@ -1,7 +1,7 @@
 # Predictive_modeling_pipeline
 
 
-Step1: Run for necessary modules installation <br /><br />
+Step 1: Run for necessary modules installation <br /><br />
 pip install requirements.txt
 
 Step 2: Data preparation <br /><br />
